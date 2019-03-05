@@ -1,14 +1,18 @@
 package io.playground.javalin;
 import io.javalin.Javalin;
 import io.playground.javalin.data.Point;
+import io.playground.javalin.data.Repos;
 
 import javax.persistence.*;
 import java.util.*;
 public class HelloWorld {
 	public static void main(String[] args) {
 		//System.setProperty("objectdb.home", "D:\\3.Learning\\playground\\db");
-        Javalin app = Javalin.create().start(7000);
+        Javalin app = Javalin.create()
+        		.enableStaticFiles("/public")
+        		.start(7000);
         app.get("/", ctx -> ctx.result("Hello World!"+playAroundObjectDb()));
+        app.get("/repos", ctx -> ctx.result("Repositories" + playAroundRepos()));
     }
 	
 	private static String playAroundObjectDb() {
@@ -45,6 +49,25 @@ public class HelloWorld {
         }
 
         // Close the database connection:
+        em.close();
+        emf.close();
+        return resp;
+	}
+	private static String playAroundRepos() {
+		String resp = "";
+        EntityManagerFactory emf =
+                Persistence.createEntityManagerFactory("$objectdb/javalin-rest.odb");
+        EntityManager em = emf.createEntityManager();
+        em.getTransaction().begin();
+        Repos r1 = new Repos("playground", "https://github.com/doanthuyan/playground");
+        em.persist(r1);
+        em.getTransaction().commit();
+        TypedQuery<Repos> query = em.createQuery("Select r from Repos r", Repos.class);
+        List<Repos> result = query.getResultList();
+        for (Repos r:result) {
+        	System.out.println(r);
+        	resp = resp.concat("\n"+r.toString());
+        }
         em.close();
         emf.close();
         return resp;
