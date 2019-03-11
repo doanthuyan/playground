@@ -1,5 +1,6 @@
+permalink: /blog/:year/:month/:day/:title
+
 markdown: kramdown
-permalink: /:categories/:year/:month/:day/:title
 
 plugins:
   - jekyll-relative-links
