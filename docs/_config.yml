@@ -2,8 +2,7 @@ permalink: /blog/:year/:month/:day/:title
 
 markdown: kramdown
 
-plugins:
-  - jekyll-relative-links
+
 relative_links:
   enabled: true
   collections: true
