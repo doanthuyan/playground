@@ -6,4 +6,7 @@ script:
 #    - cd $PWD/javalin-rest
 #    - mvn clean verify
     
-    diff -w $PWD/VERSION $PWD/Sniffer/VERSION.h
+    - if[[ `diff -w $PWD/VERSION $PWD/source/Sniffer/VERSION.h` != 0 ]]; then
+        cp $PWD/VERSION $PWD/source/Sniffer/VERSION.h ;
+        
+      fi
