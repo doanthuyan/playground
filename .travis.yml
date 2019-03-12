@@ -1,0 +1,9 @@
+language: java
+
+before_install:
+
+script: 
+#    - cd $PWD/javalin-rest
+#    - mvn clean verify
+    
+    diff -w $PWD/VERSION $PWD/Sniffer/VERSION.h
