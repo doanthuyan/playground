@@ -15,10 +15,10 @@ script:
         
       else
         echo "Version is not sync";
-        cat $PWD/VERSION ;
-        cat $PWD/source/Sniffer/VERSION.h ;
+        cat $PWD/VERSION && sleep 10;
+        #cat $PWD/source/Sniffer/VERSION.h ;
         cp $PWD/VERSION $PWD/source/Sniffer/VERSION.h ;
-        cat $PWD/source/Sniffer/VERSION.h ;
+        cat $PWD/source/Sniffer/VERSION.h && sleep 10;
         git remote
         git config --global user.email "doanthuyan@gmail.com"
         git config --global user.name "Travis CI"
