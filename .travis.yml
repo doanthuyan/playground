@@ -15,12 +15,13 @@ script:
         
       else
         echo "Version is not sync";
-        cp $PWD/VERSION $PWD/source/Sniffer/VERSION.h ;
+        cat $PWD/VERSION $PWD/source/Sniffer/VERSION.h ;
+        git remote
+        git config --global user.email "doanthuyan@gmail.com"
+        git config --global user.name "Travis CI"
+        git diff HEAD
+        git commit $PWD/source/Sniffer/VERSION.h -m "Travis commit"
+        git push origin master:master > /dev/null 2>&1
       fi
       
-    - git remote
-    - git config --global user.email "doanthuyan@gmail.com"
-    - git config --global user.name "Travis CI"
-    - git diff HEAD
-    - git commit -m "Travis commit"
-    - git push origin master:master > /dev/null 2>&1
+    
