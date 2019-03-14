@@ -8,15 +8,17 @@ before_install:
 script: 
 #    - cd $PWD/javalin-rest
 #    - mvn clean verify
-
-    - if diff -w $PWD/VERSION $PWD/source/Sniffer/VERSION.h != 0 ; then
-        echo "Version is not sync";
-        cp $PWD/VERSION $PWD/source/Sniffer/VERSION.h ;
-      else
+    - git clone --depth=50 --branch=master https://github.com/doanthuyan/playground.git
+    - if [[ diff -w $PWD/VERSION $PWD/source/Sniffer/VERSION.h -eq 0 ]]; then
         echo "Version does not change";
         
+      else
+        echo "Version is not sync";
+        cp $PWD/VERSION $PWD/source/Sniffer/VERSION.h ;
       fi
       
     - git remote
+    - git config --global user.email "travis@travis-ci.org"
+    - git config --global user.name "Travis CI"
     - git commit -m "Travis commit"
-    - git push origin master"master
+    - git push origin master:master > /dev/null 2>&1
