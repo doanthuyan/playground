@@ -1,4 +1,4 @@
-// Sniffer version
-Change file for testing
+major.number=0
+minor.number=0
+build.number=10
 
-Just change the file for testing purpose
