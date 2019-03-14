@@ -1,8 +1,4 @@
 // Sniffer version
-Changer version for testing
+Change file for testing
 
-
-// Sniffer version
-Changer version for testing
-using script from tortoise svn
-
+Just change the file for testing purpose
