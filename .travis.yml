@@ -6,7 +6,10 @@ script:
 #    - cd $PWD/javalin-rest
 #    - mvn clean verify
 
-    - if[[ `diff -w $PWD/VERSION $PWD/source/Sniffer/VERSION.h` != 0 ]]; then
+    - if diff -w $PWD/VERSION $PWD/source/Sniffer/VERSION.h` != 0 ; then
+        echo "Version is not sync";
         cp $PWD/VERSION $PWD/source/Sniffer/VERSION.h ;
+      else
+        echo "Version does not change";
         
       fi
