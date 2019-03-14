@@ -9,7 +9,7 @@ script:
 #    - cd $PWD/javalin-rest
 #    - mvn clean verify
     - git clone --depth=50 --branch=master https://github.com/doanthuyan/playground.git
-    - if [[ diff -w $PWD/VERSION $PWD/source/Sniffer/VERSION.h -eq 0 ]]; then
+    - if diff -w $PWD/VERSION $PWD/source/Sniffer/VERSION.h = 0 ; then
         echo "Version does not change";
         
       else
