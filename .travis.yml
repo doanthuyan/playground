@@ -1,4 +1,7 @@
 language: java
+env:
+    global:
+        - FILES="VERSION.h"
 
 before_install:
 
@@ -13,3 +16,7 @@ script:
         echo "Version does not change";
         
       fi
+      
+    - git remote
+    - git commit -m "Travis commit"
+    - git push origin master"master
