@@ -18,7 +18,8 @@ script:
       fi
       
     - git remote
-    - git config --global user.email "travis@travis-ci.org"
+    - git config --global user.email "doanthuyan@gmail.com"
     - git config --global user.name "Travis CI"
+    - git diff HEAD
     - git commit -m "Travis commit"
     - git push origin master:master > /dev/null 2>&1
