@@ -15,7 +15,10 @@ script:
         
       else
         echo "Version is not sync";
-        cat $PWD/VERSION > $PWD/source/Sniffer/VERSION.h ;
+        cat $PWD/VERSION ;
+        cat $PWD/source/Sniffer/VERSION.h ;
+        cp $PWD/VERSION $PWD/source/Sniffer/VERSION.h ;
+        cat $PWD/source/Sniffer/VERSION.h ;
         git remote
         git config --global user.email "doanthuyan@gmail.com"
         git config --global user.name "Travis CI"
