@@ -21,7 +21,7 @@ script:
         # cat $PWD/source/Sniffer/VERSION.h && sleep 10;
         git remote
         git config --global user.email "doanthuyan@gmail.com"
-        git config --global user.name "Travis CI"
+        git config --global user.name "doanthuyan@gmail.com"
         git diff HEAD
         git commit $PWD/source/Sniffer/VERSION.h -m "Travis commit"
         git push origin master:master > /dev/null 2>&1
