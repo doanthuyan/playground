@@ -1,17 +1,29 @@
-permalink: /blog/:year/:month/:day/:title
 
 markdown: kramdown
+theme: jekyll-theme-cayman
 
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  
+collections:
+  authors:
+    output: true
 
-relative_links:
-  enabled: true
-  collections: true
-include:
-  - CONTRIBUTING.md
-  - README.md
-  - LICENSE.md
-  - COPYING.md
-  - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
-  - ISSUE_TEMPLATE.md
-  - PULL_REQUEST_TEMPLATE.md
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      
+paginate: 5
