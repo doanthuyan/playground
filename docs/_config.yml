@@ -1,3 +1,12 @@
+# url is the full website URL
+# baseurl is the website's URL without the hostname
+
+# If you are building a GitHub project page then use these settings:
+url: "http://doanthuyan.github.io/playground"
+baseurl: "/playground"
+
+title: An's playground
+description: A playground for my stuffs while learning
 
 markdown: kramdown
 theme: jekyll-theme-cayman
