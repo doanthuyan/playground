@@ -36,9 +36,9 @@ public class HelloWorld {
         //ctx.uploadedFiles("files").forEach { (contentType, content, name, extension) ->
         //    FileUtil.streamToFile(content, "upload/$name")
         //}
-        app.post("/upload", ctx -> {
+        app.post("/api/book/upload/cover", ctx -> {
              
-                FileUtil.streamToFile(ctx.uploadedFile("file").getContent(), "images/" + ctx.uploadedFile("file").getName());
+                FileUtil.streamToFile(ctx.uploadedFile("file").getContent(), "uploads/" + ctx.uploadedFile("file").getName());
             
         });
     }

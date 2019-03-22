@@ -1,4 +1,5 @@
 <script type="text/javascript" language="javascript">
+
 function editBook(bookId){
 	var url = '/editBook' ;
 	var form = $('<form action="' + url + '" method="post">' +
@@ -7,6 +8,7 @@ function editBook(bookId){
 	$('body').append(form);
 	form.submit();
 }
+
 function getBooks()
 {
     
@@ -42,7 +44,11 @@ function parseData(textData)
 	txt+= "<th>Author</th>";
 	txt+= "<th>Year</th>";
 	txt+= "<th>Language</th>";
+<<<<<<< HEAD
 	txt+= "<th>Cover</th><th>Actions</th>";
+=======
+	txt+= "<th>Cover</th>";
+>>>>>>> 42f5ca8865748540f0ed37cf4dcfa42d331fdbd6
 	txt+="</thead></tr><tbody>";
 	
 	//fill table content
@@ -63,9 +69,12 @@ function parseData(textData)
 		txt += "<td>";
 		txt += "<img src=\""+myObj[i].imageLink +"\" alt=\""+myObj[i].title+"\" style=\"width:128px;height:128px;\"";
 		txt += "</td>";
+<<<<<<< HEAD
 		txt += "<td><form action='editBook.html' method='post'>";
 		txt += "<input type='text' name='bookId' value='"+myObj[i].id+"' hidden>";
 		txt += "<input type='submit' value='Edit'></td>";
+=======
+>>>>>>> 42f5ca8865748540f0ed37cf4dcfa42d331fdbd6
 		txt+="</tr>";
 	}
 		
@@ -118,7 +127,11 @@ thead {
 
 
 tbody td, thead th {
+<<<<<<< HEAD
 	width: 15%;
+=======
+	width: 19.3%;
+>>>>>>> 42f5ca8865748540f0ed37cf4dcfa42d331fdbd6
 	float: left;
 }
 tbody td{ height: 150px; vertical-align: middle;}
