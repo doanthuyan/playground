@@ -1,0 +1,78 @@
+
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+    <script src="http://malsup.github.com/jquery.form.js"></script>
+	<script type="text/javascript" language="javascript">
+
+function saveBook()
+{
+    document.getElementById("imageForm").submit();
+    URL = "/api/book/add";
+	
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange  = function(){
+		var txt ="<h2>";
+		console.log(this.responseText );
+		if (this.readyState == 4) {
+			if(this.responseText == "true"){
+			txt += "Book Saved!";
+			}else{
+			
+				txt += "Book cannot save. Please check data!";
+			}
+			txt += "</h2>";
+			document.getElementById("statusDiv").innerHTML = txt;
+
+		}
+	};
+    //xmlhttp.open("POST", URL, false);
+    //xmlhttp.setRequestHeader("Content-Type", "application/json");
+    //xmlhttp.onreadystatechange = callbackFunction(xmlhttp);
+    //xmlhttp.send();
+    //alert(xmlhttp.responseText);
+    //document.getElementById("demo").innerHTML = '<code>' +xmlhttp.responseText +'</code>';
+	//console.log(xmlhttp.responseText.resultStatus);
+	var queryString = $('#bookForm').formSerialize();
+	console.log(queryString);
+	xmlhttp.open("POST", URL, true);
+	xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xmlhttp.send(queryString);
+      
+}
+function loadFile(event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+	document.getElementById('imageLink').value = event.target.files[0].name;
+  }
+</script>
+</head>
+<h1>Add a book</h1>
+<div id="statusDiv"></div> 
+<div style="width:35%;  float:left" >
+<form method="POST" id="bookForm">
+<table>
+	<tr><td>Title:</td><td><input type="text" name="title" value="Mickey" /></td></tr>
+  <tr><td>Author:</td><td><input type="text" name="author" value="Mouse"/></td></tr>
+  <tr><td>Pages:</td><td><input type="number" name="pages" value="2019"/></td></tr>
+  <tr><td>Language:</td><td><input type="text" name="language" value="Mouse"/></td></tr>
+  <tr><td>Year:</td><td><input type="number" name="year" value="2019"/></td></tr>
+  <tr><td>Amount in stock:</td><td><input type="number" name="amountInStock" value="1"/></td></tr>
+  <tr><td>Country:</td><td><input type="text" name="country" value="Mouse"/></td></tr>
+  <tr><td>Link:</td><td><input type="text" name="link" value="Mouse"/></td></tr>
+  <tr><td>Cover image:</td><td><input type="text" name="imageLink" id="imageLink" value="Mouse" readonly/></td></tr>
+  </table>
+  
+</form>
+	<br>
+  <input type="button" value="Create" onclick="javascript:saveBook()">
+</div><div style="width:49%;  float:left ">
+<form id="imageForm" method="post" action="/api/book/upload/cover" enctype="multipart/form-data">
+<input type="file" accept="image/*" name="file" onchange="loadFile(event)">
+<br>
+<img id="output" style="width:150px;height:150px;"/>
+</form>
+</div>
+  
+
+<html>

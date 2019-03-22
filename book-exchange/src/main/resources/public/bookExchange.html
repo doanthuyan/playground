@@ -1,0 +1,135 @@
+<script type="text/javascript" language="javascript">
+function editBook(bookId){
+	var url = '/editBook' ;
+	var form = $('<form action="' + url + '" method="post">' +
+	  '<input type="text" name="bookId" value="' + bookId + '" />' +
+	  '</form>');
+	$('body').append(form);
+	form.submit();
+}
+function getBooks()
+{
+    
+    URL = "api/books";
+	//console.log(urlvariable);
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange  = function(){
+		
+		if (this.readyState == 4) {
+			parseData(this.responseText) ;
+		}
+	};
+    xmlhttp.open("GET", URL, false);
+    xmlhttp.setRequestHeader("Content-Type", "application/json");
+    //xmlhttp.onreadystatechange = callbackFunction(xmlhttp);
+    xmlhttp.send();
+    //alert(xmlhttp.responseText);
+    //document.getElementById("demo").innerHTML = '<code>' +xmlhttp.responseText +'</code>';
+	//console.log(xmlhttp.responseText.resultStatus);
+	
+      
+}
+
+function parseData(textData) 
+{
+    var txt="";
+	console.log(textData);
+	var myObj = JSON.parse(textData);
+	
+	//make table head
+	txt += "<table id='customers' class='table table-striped'><thead><tr>";
+	txt+= "<th>Title</th>";
+	txt+= "<th>Author</th>";
+	txt+= "<th>Year</th>";
+	txt+= "<th>Language</th>";
+	txt+= "<th>Cover</th><th>Actions</th>";
+	txt+="</thead></tr><tbody>";
+	
+	//fill table content
+	for (i in myObj){
+		txt+="<tr>";
+		txt += "<td style=\"color: Navy;font-size: 150%;\"><a href=\""+myObj[i].link+"\">";
+		txt += myObj[i].title;
+		txt += "</a></td>";
+		txt += "<td>";
+		txt += myObj[i].author;
+		txt += "</td>";
+		txt += "<td>";
+		txt += myObj[i].year;
+		txt += "</td>";
+		txt += "<td>";
+		txt += myObj[i].language;
+		txt += "</td>";
+		txt += "<td>";
+		txt += "<img src=\""+myObj[i].imageLink +"\" alt=\""+myObj[i].title+"\" style=\"width:128px;height:128px;\"";
+		txt += "</td>";
+		txt += "<td><form action='editBook.html' method='post'>";
+		txt += "<input type='text' name='bookId' value='"+myObj[i].id+"' hidden>";
+		txt += "<input type='submit' value='Edit'></td>";
+		txt+="</tr>";
+	}
+		
+
+	txt += "</tbody></table>"    ;
+	//console.log(txt);
+		
+	
+	document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+
+<html>
+<head>
+<style>
+table {
+    width: 100%;
+}
+
+thead, tbody, tr, td, th { display: block; }
+
+tr:after {
+	content: ' ';
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+
+thead th {
+	height: 30px;
+
+	/*text-align: left;*/
+	padding-top: 6px;
+	padding-bottom: 6px;
+	text-align: left;
+	background-color: #4CAF50;
+	color: white;
+}
+
+tbody {
+	height: 600px;
+	overflow-y: auto;
+}
+
+thead {
+	/* fallback */
+}
+
+
+tbody td, thead th {
+	width: 15%;
+	float: left;
+}
+tbody td{ height: 150px; vertical-align: middle;}
+
+
+</style>
+</head>
+<body id='bod' onload='getBooks()'>
+
+<h1>Book exchange platform</h1>
+<div style="overflow-y: scroll;" id="demo"></div>
+
+</body>
+</html>
