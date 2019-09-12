@@ -12,7 +12,7 @@ public class HelloWorld {
         		.enableStaticFiles("/public")
         		.start(7000);
         app.get("/", ctx -> ctx.result("Hello World!"+playAroundObjectDb()));
-        app.get("/repos", ctx -> ctx.result("Repositories" + playAroundRepos()));
+        //app.get("/repos", ctx -> ctx.result("Repositories" + playAroundRepos()));
     }
 	
 	private static String playAroundObjectDb() {

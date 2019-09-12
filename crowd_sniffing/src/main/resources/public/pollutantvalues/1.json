@@ -1,0 +1,124 @@
+{  "data":{
+		"source":{  
+			"sourceId":"YPDhS0TxtK",
+			"macAddress":"A0-20-A6-16-88-81",
+			"gpsLocation":{  
+				"latitude":"10.873544",
+				"longitude":"106.79153"
+			}
+		},
+		"values":[  
+			{  
+				"code":"PM2.5",
+				"sensor":"Nova fitness",
+				"value":{  
+					"value":0,
+					"measuredAt":"2019-02-22T06:50:00.000Z"
+				}
+			},
+			{  
+				"code":"PM2.5",
+				"sensor":"Nova fitness",
+				"value":{  
+					"value":0,
+					"measuredAt":"2019-02-22T06:00:00.000Z"
+				}
+			},
+			{  
+				"code":"PM2.5",
+				"sensor":"Nova fitness",
+				"value":{  
+					"value":0,
+					"measuredAt":"2019-02-22T06:10:00.000Z"
+				}
+			},
+			{  
+				"code":"PM2.5",
+				"sensor":"Nova fitness",
+				"value":{  
+					"value":0,
+					"measuredAt":"2019-02-22T06:20:00.000Z"
+				}
+			},
+			{  
+				"code":"PM2.5",
+				"sensor":"Nova fitness",
+				"value":{  
+					"value":0,
+					"measuredAt":"2019-02-22T06:30:00.000Z"
+				}
+			},
+			{  
+				"code":"PM2.5",
+				"sensor":"Nova fitness",
+				"value":{  
+					"value":0,
+					"measuredAt":"2019-02-22T06:40:00.000Z"
+				}
+			},
+			{  
+				"code":"PM10",
+				"sensor":"Nova fitness",
+				"value":{  
+					"value":0,
+					"measuredAt":"2019-02-22T06:50:00.000Z"
+				}
+			},
+			{  
+				"code":"PM10",
+				"sensor":"Nova fitness",
+				"value":{  
+					"value":0,
+					"measuredAt":"2019-02-22T06:00:00.000Z"
+				}
+			},
+			{  
+				"code":"PM10",
+				"sensor":"Nova fitness",
+				"value":{  
+					"value":0,
+					"measuredAt":"2019-02-22T06:10:00.000Z"
+				}
+			},
+			{  
+				"code":"PM10",
+				"sensor":"Nova fitness",
+				"value":{  
+					"value":0,
+					"measuredAt":"2019-02-22T06:20:00.000Z"
+				}
+			},
+			{  
+				"code":"PM10",
+				"sensor":"Nova fitness",
+				"value":{  
+					"value":0,
+					"measuredAt":"2019-02-22T06:30:00.000Z"
+				}
+			},
+			{  
+				"code":"PM10",
+				"sensor":"Nova fitness",
+				"value":{  
+					"value":0,
+					"measuredAt":"2019-02-22T06:40:00.000Z"
+				}
+			},
+			{  
+				"code":"PM10",
+				"sensor":"Nova fitness",
+				"value":{  
+					"value":0,
+					"measuredAt":"2019-02-22T06:50:00.000Z"
+				}
+			}
+		]
+	},
+	"resultStatus": {
+		"successful": true,
+		"message": null,
+		"code": null,
+		"severity": "INFO",
+		"detailedMessage": null
+	}
+}

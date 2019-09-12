@@ -1,0 +1,310 @@
+ [
+        {
+            "id": 2,
+            "code": "HZU-J6S-GBJ-YNB",
+            "name": "Sniffer1",
+            "gpsLocation": {
+                "latitude": 10.8403283,
+                "longitude": 106.6814543
+            },
+            "macAddress": "34-A2-33-01-5D-3F",
+            "status": "OPERATING"
+        },
+        {
+            "id": 3,
+            "code": "VLM-OH8-SEF-H03",
+            "name": "Sniffer2",
+            "gpsLocation": {
+                "latitude": 16.8660694,
+                "longitude": 96.195132
+            },
+            "macAddress": "44-A2-33-01-5D-3C",
+            "status": "OPERATING"
+        },
+        {
+            "id": 4,
+            "code": "UOH-WQX-R5W-697",
+            "name": "Hanh Thong Tay",
+            "gpsLocation": {
+                "latitude": 10.836762,
+                "longitude": 106.66057
+            },
+            "macAddress": "EF-EF-EF-EF-EF-EF",
+            "status": "OPERATING"
+        },
+        {
+            "id": 5,
+            "code": "ZUE-RUJ-CCS-KG0",
+            "name": "maymon's sniffer",
+            "gpsLocation": {
+                "latitude": 10.810944,
+                "longitude": 106.667759
+            },
+            "macAddress": "45-B2-DA-00-2F-F5",
+            "status": "OPERATING"
+        },
+        {
+            "id": 6,
+            "code": "SOS-X2H-YLK-PI8",
+            "name": "kyu's sniffer",
+            "gpsLocation": {
+                "latitude": 10.811797,
+                "longitude": 106.663854
+            },
+            "macAddress": "50-B2-DA-00-2F-F5",
+            "status": "OPERATING"
+        },
+        {
+            "id": 8,
+            "code": "CY0-W6G-78B-LS9",
+            "name": "asakusa",
+            "gpsLocation": {
+                "latitude": 35.7185003,
+                "longitude": 139.8026951
+            },
+            "macAddress": "77-A6-3A-00-2F-E4",
+            "status": "INACTIVE"
+        },
+        {
+            "id": 11,
+            "code": "8SO-102-PRZ-56R",
+            "name": "Htunhtun's sniffer",
+            "gpsLocation": {
+                "latitude": 15.931074,
+                "longitude": 101.799947
+            },
+            "macAddress": "90-B2-DA-00-2F-F3",
+            "status": "OPERATING"
+        },
+        {
+            "id": 12,
+            "code": "OLnHNmFv0J",
+            "name": "Sniffer4",
+            "gpsLocation": {
+                "latitude": 16.0765514373779,
+                "longitude": 108.210021972656
+            },
+            "macAddress": "00-00-00-00-00-02",
+            "status": "OPERATING"
+        },
+        {
+            "id": 13,
+            "code": "LL0-UKV-NHT-GHY",
+            "name": "Sniffer5",
+            "gpsLocation": {
+                "latitude": 11.8092065,
+                "longitude": 106.6641128
+            },
+            "macAddress": "AA-26-DD-14-C4-EE",
+            "status": "OPERATING"
+        },
+        {
+            "id": 14,
+            "code": "1KX-QCC-BR6-W6Q",
+            "name": "Sniffer6",
+            "gpsLocation": {
+                "latitude": 12.8024332,
+                "longitude": 112.1643333
+            },
+            "macAddress": "34-A3-34-01-5D-3A",
+            "status": "OPERATING"
+        },
+        {
+            "id": 15,
+            "code": "UZ1-2WR-5MC-0UL",
+            "name": "Sniffer7",
+            "gpsLocation": {
+                "latitude": 10.8092333,
+                "longitude": 106.6633333
+            },
+            "macAddress": "34-A2-33-01-5D-3E",
+            "status": "OPERATING"
+        },
+        {
+            "id": 16,
+            "code": "MSR-FYS-8VM-JD6",
+            "name": "Sniffer8",
+            "gpsLocation": {
+                "latitude": 10.8092065,
+                "longitude": 106.663338999
+            },
+            "macAddress": "00-26-DD-14-C4-AF",
+            "status": "OPERATING"
+        },
+        {
+            "id": 17,
+            "code": "TDG-Z9O-P11-FZX",
+            "name": "Sniffer9",
+            "gpsLocation": {
+                "latitude": 12.8124332,
+                "longitude": 112.1243333
+            },
+            "macAddress": "32-A3-34-01-5D-3A",
+            "status": "OPERATING"
+        },
+        {
+            "id": 18,
+            "code": "ANfiBkFcjj",
+            "name": "Sniffer10",
+            "gpsLocation": {
+                "latitude": 10.0492496490479,
+                "longitude": 105.776191711426
+            },
+            "macAddress": "10-00-00-00-00-00",
+            "status": "OPERATING"
+        },
+        {
+            "id": 19,
+            "code": "DI7-OYP-ZLQ-HWZ",
+            "name": "Sniffer11",
+            "gpsLocation": {
+                "latitude": 10.808889,
+                "longitude": 106.666903
+            },
+            "macAddress": "BB-A2-33-01-AA-AA",
+            "status": "OPERATING"
+        },
+        {
+            "id": 20,
+            "code": "UI5-2K1-W9Y-V7F",
+            "name": "Sniffer12",
+            "gpsLocation": {
+                "latitude": 10.900851,
+                "longitude": 106.581674
+            },
+            "macAddress": "58-B2-DA-00-2F-F5",
+            "status": "OPERATING"
+        },
+        {
+            "id": 26,
+            "code": "1YM-BMR-1WS-K5K",
+            "name": "Ni Sniffer",
+            "gpsLocation": {
+                "latitude": 10.8092065,
+                "longitude": 106.663338999
+            },
+            "macAddress": "00-26-DD-15-C4-AF",
+            "status": "INACTIVE"
+        },
+        {
+            "id": 29,
+            "code": "669-ZZ2-RA3-VT2",
+            "name": "Markus_sniffer",
+            "gpsLocation": {
+                "latitude": 15.9796,
+                "longitude": 108.2527
+            },
+            "macAddress": "68:C6:3A:87:F2:66",
+            "status": "INACTIVE"
+        },
+        {
+            "id": 28,
+            "code": "669-ZZ2-RA3-VT2",
+            "name": "Markus_sniffer",
+            "gpsLocation": {
+                "latitude": 15.979613304138184,
+                "longitude": 108.25274658203125
+            },
+            "macAddress": "68:C6:3A:87:F2:66",
+            "status": "INACTIVE"
+        },
+        {
+            "id": 1,
+            "code": "TZ9-C7S-YY4-H4M",
+            "name": "Sunshine’s sniffer",
+            "gpsLocation": {
+                "latitude": 10.04428482055664,
+                "longitude": 105.76984405517578
+            },
+            "macAddress": "68:C6:3A:87:F3:7B",
+            "status": "OPERATING"
+        },
+        {
+            "id": 7,
+            "code": "2ZY-OST-F18-3GW",
+            "name": "airport's sniffer",
+            "gpsLocation": {
+                "latitude": 10.830164,
+                "longitude": 106.654947
+            },
+            "macAddress": "85-B2-DA-00-2F-F5",
+            "status": "OPERATING"
+        },
+        {
+            "id": 9,
+            "code": "O2C-OB4-N5J-JZO",
+            "name": "ttt Sniffer",
+            "gpsLocation": {
+                "latitude": 11.8092065,
+                "longitude": 206.663338999
+            },
+            "macAddress": "01-26-DD-14-C4-AF",
+            "status": "OPERATING"
+        },
+        {
+            "id": 21,
+            "code": "F51-P31-WYL-8ZK",
+            "name": "Ni Sniffer",
+            "gpsLocation": {
+                "latitude": 10.8092065,
+                "longitude": 106.663338999
+            },
+            "macAddress": "00-26-DD-14-C4-BD",
+            "status": "INACTIVE"
+        },
+        {
+            "id": 22,
+            "code": "K7S-QS8-M8Q-5O0",
+            "name": "Ahlone Sniffer1",
+            "gpsLocation": {
+                "latitude": 16.782883,
+                "longitude": 96.128845
+            },
+            "macAddress": "77-A6-1A-00-2F-E4",
+            "status": "OPERATING"
+        },
+        {
+            "id": 23,
+            "code": "CPT-NJJ-FHK-HQF",
+            "name": "Ahlone Sniffer2",
+            "gpsLocation": {
+                "latitude": 16.782884,
+                "longitude": 96.128846
+            },
+            "macAddress": "77-A6-2A-00-2F-E4",
+            "status": "OPERATING"
+        },
+        {
+            "id": 24,
+            "code": "HNP-1HO-NOJ-QHZ",
+            "name": "Ahlone Sniffer3",
+            "gpsLocation": {
+                "latitude": 16.782885,
+                "longitude": 96.128847
+            },
+            "macAddress": "77-A6-4A-00-2F-E4",
+            "status": "OPERATING"
+        },
+        {
+            "id": 25,
+            "code": "B20-M3M-R8U-2JH",
+            "name": "Ahlone Sniffer4",
+            "gpsLocation": {
+                "latitude": 16.782886,
+                "longitude": 96.128848
+            },
+            "macAddress": "77-A6-5A-00-2F-E4",
+            "status": "OPERATING"
+        },
+        {
+            "id": 27,
+            "code": "5PE-OZF-ZEE-GE2",
+            "name": "Sniffer 13",
+            "gpsLocation": {
+                "latitude": 10.813296,
+                "longitude": 106.667862
+            },
+            "macAddress": "00-26-AD-15-C4-AF",
+            "status": "INACTIVE"
+        }
+    ]

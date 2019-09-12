@@ -1,0 +1,43 @@
+[
+	{
+	  "code": "CO2",
+	  "name": "Carbon dioxide",
+	  "description": "Carbon dioxide (chemical formula CO2) is a colorless and odorless gas vital to life on Earth. This naturally occurring chemical compound is composed of a carbon atom covalently double bonded to two oxygen atoms",
+	  "unit": "ppb"
+	},
+	{
+		"id": "101",
+		"unit": "ppb",
+		"description": "Ozone is a gas that can form and react under the action of light and that is present in two layers of the atmosphere",
+		"name": "Ozone",
+		"code": "O3"
+	},
+	{
+		"id": "102",
+		"unit": "ug/m3",
+		"description": "Particulate Matter is the term for particles found in the air, including dust, dirt, soot, smoke, and liquid droplets",
+		"name": "PM 2.5 microns",
+		"code": "PM2.5"
+	},
+	{
+		"id": "103",
+		"unit": "ppb",
+		"description": "Carbon monoxide is a colorless, odorless, and tasteless gas that is slightly less dense than air",
+		"name": "Carbon Monoxide",
+		"code": "CO"
+	},
+	{
+		"id": "104",
+		"unit": "C",
+		"description": "Temperature is an objective comparative measure of hot or cold. It is measured by a thermometer, which may work through the bulk behavior of a thermometric material, detection of thermal radiation, or particle kinetic energy",
+		"name": "Temperature",
+		"code": "TEMP"
+	},
+	{
+		"id": "105",
+		"unit": "ratio",
+		"description": "Humidity is the amount of water vapor in the air. Water vapor is the gaseous state of water and is invisible",
+		"name": "Humidity",
+		"code": "HUM"
+	}
+]

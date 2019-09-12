@@ -1,0 +1,206 @@
+<script type="text/javascript" language="javascript">
+
+function send()
+{
+	//document.getElementById("demo").innerHTML = "";
+	showLoader(true);
+	//document.getElementById("myDIV").style.display = "block";
+    var urlvariable;
+
+    urlvariable = "text";
+
+	var d = new Date();
+	d.setHours(0);
+	d.setMinutes(0);
+	console.log(d.toISOString());
+	var dStr = d.toISOString().slice(0,10);
+
+    
+	console.log("getting data");
+	
+    URL = "https://crowdsniffing.org/api/pollutantvalues/latest" ;
+	//URL = "http://192.168.75.87:7000/latestPollutantValues.json";
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange  = function(){
+		
+		if (this.readyState == 4) {
+			parseData(this.responseText) ;
+			//document.getElementById("myDIV").style.display = "none";
+			showLoader(false);
+		}
+	};
+	
+    xmlhttp.open("GET", URL, true);
+	
+    xmlhttp.setRequestHeader("Content-Type", "application/json");
+    //xmlhttp.onreadystatechange = callbackFunction(xmlhttp);
+	
+    xmlhttp.send();
+    //alert(xmlhttp.responseText);
+    //document.getElementById("demo").innerHTML = '<code>' +xmlhttp.responseText +'</code>';
+	//console.log(xmlhttp.responseText.resultStatus);
+	
+    
+}
+
+function parseData(textData) 
+{
+    var txt="";
+	console.log(textData);
+	var myObj = JSON.parse(textData);
+	var timeArr=[];
+	txt += "<table ><thead><tr>";
+	txt += "<th rowspan='2'>Name</th><th rowspan='2'>Status</th><th colspan='3'>PM2.5</th><th colspan='3'>PM10</th><th colspan='3'>Temp</th><th colspan='3'>Hum</th></tr>";
+	txt += "<tr>";
+	txt += "<th>Value</th><th>Sensor</th><th>Time</th>";
+	txt += "<th>Value</th><th>Sensor</th><th>Time</th>";
+	txt += "<th>Value</th><th>Sensor</th><th>Time</th>";
+	txt += "<th>Value</th><th>Sensor</th><th>Time</th>";
+	txt += "</tr>";
+	
+	txt += "</thead>"  ;
+	
+	if(myObj.data.length > 0){
+		for (x in myObj.data) {
+			txt += "<tr><td>";
+			txt += myObj.data[x].name ;
+			txt += "</td><td>";
+			txt += myObj.data[x].status ;
+			txt += "</td>";
+			if(myObj.data[x].pollutantValue.length > 0){
+				var list = myObj.data[x].pollutantValue;
+			console.log("Data: " + x);
+				pv = findPollutantValue("PM2.5",list);
+				if(pv === undefined){
+					txt += "<td></td><td></td><td></td>";
+				}else{
+					txt += "<td>"+ pv.value+"</td>";
+					txt += "<td>"+ pv.sensor+"</td>";
+					txt += "<td>"+ pv.measuredAt+"</td>";
+				}
+				pv = findPollutantValue("PM10",list);
+				if(pv === undefined){
+					txt += "<td></td><td></td><td></td>";
+				}else{
+					txt += "<td>"+ pv.value+"</td>";
+					txt += "<td>"+ pv.sensor+"</td>";
+					txt += "<td>"+ pv.measuredAt+"</td>";
+				}
+				pv = findPollutantValue("TEMP",list);
+				if(pv === undefined){
+					txt += "<td></td><td></td><td></td>";
+				}else{
+					txt += "<td>"+ pv.value+"</td>";
+					txt += "<td>"+ pv.sensor+"</td>";
+					txt += "<td>"+ pv.measuredAt+"</td>";
+				}
+				pv = findPollutantValue("HUM",list);
+				if(pv === undefined){
+					txt += "<td></td><td></td><td></td>";
+				}else{
+					txt += "<td>"+ pv.value+"</td>";
+					txt += "<td>"+ pv.sensor+"</td>";
+					txt += "<td>"+ pv.measuredAt+"</td>";
+				}
+			}else{
+				txt += "<td></td><td></td><td></td>";
+				txt += "<td></td><td></td><td></td>";
+				txt += "<td></td><td></td><td></td>";
+				txt += "<td></td><td></td><td></td>";
+			}
+			txt += "</tr>";
+		}
+	}
+	txt += "</table>"  ;
+	
+	console.log(txt);
+	document.getElementById("demo").innerHTML = txt;
+}
+
+function findPollutantValue(code, array){
+	var obj;
+	console.log (array);
+	for(x in array){
+		if(array[x].pollutant.code == code){
+			obj = array[x];
+			break;
+		}
+	}
+	return obj;
+}
+function showLoader(visibility) {
+	//document.getElementById("myDIV").innerHTML = "<img id='myImg'' src='images/ajax-loader.gif' />";
+  var x = document.getElementById("myDIV");
+	var btn = document.getElementById("submitBtn");
+  //if (x.style.display === "none") {
+	if(visibility == true){
+    	x.style.display = "block";
+		btn.classList.toggle("disabled");
+	//document.getElementById("myImg").style.display = "block";
+	}else{
+		x.style.display = "none";
+		btn.classList.toggle("disabled");
+	}
+  //} else {
+  //  x.style.display = "none";
+  //}
+
+}
+function showHide(){
+	showLoader(true);
+}
+</script>
+
+
+<html>
+<head>
+<style>
+table {
+    width: 100%;
+}
+table, th, td {
+  border: 1px solid black;
+	border-collapse: collapse;
+}
+tr:nth-child(even) {
+  background-color: rgb(209, 255, 164);
+}
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+</style>
+</head>
+<body id='bod'>
+<h2>Server https://crowdsniffing.org </h2>
+
+ 
+<button id="submitBtn" type="submit" onclick="javascript:send()" class="button">Get latest data</button><br><br>
+<h3>Sniffer data today</h3>
+<div id="myDIV" style="display: none;">
+<img id='myImg' src='images/ajax-loader.gif' />
+</div>
+
+<div  id="demo"></div>
+
+</body>
+</html>

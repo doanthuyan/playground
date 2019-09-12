@@ -1,0 +1,572 @@
+{
+    "data": [
+        {
+            "code": "OLnHNmFv0J",
+            "macAddress": "00-00-00-00-00-02",
+            "name": "Lien's Sniffer",
+            "status": "OPERATING",
+            "validFrom": "2017-07-04T00:00:00.000+07",
+            "validTo": null,
+            "latitude": 16.07655143737793,
+            "longitude": 108.21002197265625,
+            "pollutantValue": [
+                {
+                    "measuredAt": "2019-06-06T15:59:10.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 17.5,
+                    "pollutant": {
+                        "code": "PM10",
+                        "name": "PM 10 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 200
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:59:10.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 13.600000381469727,
+                    "pollutant": {
+                        "code": "PM2.5",
+                        "name": "PM 2.5 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 201
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:59:10.000+07",
+                    "sensor": "DHT11",
+                    "value": 38,
+                    "pollutant": {
+                        "code": "TEMP",
+                        "name": "Temperature",
+                        "defaultUnit": "\ufffdC",
+                        "description": "https://en.wikipedia.org/wiki/Temperature",
+                        "id": 204
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:59:10.000+07",
+                    "sensor": "DHT11",
+                    "value": 55,
+                    "pollutant": {
+                        "code": "HUM",
+                        "name": "Humidity",
+                        "defaultUnit": "%",
+                        "description": "https://en.wikipedia.org/wiki/Humidity",
+                        "id": 205
+                    }
+                }
+            ],
+            "sourceId": 4
+        },
+        {
+            "code": "ANfiBkFcjj",
+            "macAddress": "10-00-00-00-00-00",
+            "name": "AACT_sniffer",
+            "status": "OPERATING",
+            "validFrom": "2017-03-29T00:00:00.000+07",
+            "validTo": null,
+            "latitude": 10.049249649047852,
+            "longitude": 105.77619171142578,
+            "pollutantValue": [
+                {
+                    "measuredAt": "2019-06-06T15:58:01.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 12.199999809265137,
+                    "pollutant": {
+                        "code": "PM10",
+                        "name": "PM 10 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 200
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:58:01.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 6.199999809265137,
+                    "pollutant": {
+                        "code": "PM2.5",
+                        "name": "PM 2.5 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 201
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:58:01.000+07",
+                    "sensor": "DHT11",
+                    "value": 28,
+                    "pollutant": {
+                        "code": "TEMP",
+                        "name": "Temperature",
+                        "defaultUnit": "\ufffdC",
+                        "description": "https://en.wikipedia.org/wiki/Temperature",
+                        "id": 204
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:58:01.000+07",
+                    "sensor": "DHT11",
+                    "value": 57,
+                    "pollutant": {
+                        "code": "HUM",
+                        "name": "Humidity",
+                        "defaultUnit": "%",
+                        "description": "https://en.wikipedia.org/wiki/Humidity",
+                        "id": 205
+                    }
+                }
+            ],
+            "sourceId": 1
+        },
+        {
+            "code": "55K-IHL-XWY-WMV",
+            "macAddress": "FF-A2-DA-00-3F-01",
+            "name": "Sebi_sniffer_2",
+            "status": "OPERATING",
+            "validFrom": "2018-08-31T00:00:00.000+07",
+            "validTo": null,
+            "latitude": 10.79941463470459,
+            "longitude": 106.68661499023438,
+            "pollutantValue": [
+                {
+                    "measuredAt": "2019-06-06T15:52:22.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 5.5,
+                    "pollutant": {
+                        "code": "PM10",
+                        "name": "PM 10 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 200
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:52:22.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 2.5999999046325684,
+                    "pollutant": {
+                        "code": "PM2.5",
+                        "name": "PM 2.5 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 201
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:52:22.000+07",
+                    "sensor": "DHT11",
+                    "value": 41,
+                    "pollutant": {
+                        "code": "TEMP",
+                        "name": "Temperature",
+                        "defaultUnit": "\ufffdC",
+                        "description": "https://en.wikipedia.org/wiki/Temperature",
+                        "id": 204
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:52:22.000+07",
+                    "sensor": "DHT11",
+                    "value": 14,
+                    "pollutant": {
+                        "code": "HUM",
+                        "name": "Humidity",
+                        "defaultUnit": "%",
+                        "description": "https://en.wikipedia.org/wiki/Humidity",
+                        "id": 205
+                    }
+                }
+            ],
+            "sourceId": 31
+        },
+        {
+            "code": "WB0-5VP-24H-3TQ",
+            "macAddress": "5C:CF:7F:40:D2:93",
+            "name": "NamDang_sniffer",
+            "status": "OPERATING",
+            "validFrom": "2019-02-19T00:00:00.000+07",
+            "validTo": null,
+            "latitude": 16.026439666748047,
+            "longitude": 108.21189880371094,
+            "pollutantValue": [],
+            "sourceId": 34
+        },
+        {
+            "code": "cphD35ogqq",
+            "macAddress": "EC-FA-BC-13-A3-FC",
+            "name": "AAVN_house_sniffer",
+            "status": "OPERATING",
+            "validFrom": "2017-02-23T00:00:00.000+07",
+            "validTo": null,
+            "latitude": 10.806047439575195,
+            "longitude": 106.66419219970703,
+            "pollutantValue": [
+                {
+                    "measuredAt": "2019-06-06T15:58:01.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 6,
+                    "pollutant": {
+                        "code": "PM10",
+                        "name": "PM 10 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 200
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:58:01.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 3.9000000953674316,
+                    "pollutant": {
+                        "code": "PM2.5",
+                        "name": "PM 2.5 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 201
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:58:01.000+07",
+                    "sensor": "DHT11",
+                    "value": 25,
+                    "pollutant": {
+                        "code": "TEMP",
+                        "name": "Temperature",
+                        "defaultUnit": "\ufffdC",
+                        "description": "https://en.wikipedia.org/wiki/Temperature",
+                        "id": 204
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:58:01.000+07",
+                    "sensor": "DHT11",
+                    "value": 71,
+                    "pollutant": {
+                        "code": "HUM",
+                        "name": "Humidity",
+                        "defaultUnit": "%",
+                        "description": "https://en.wikipedia.org/wiki/Humidity",
+                        "id": 205
+                    }
+                }
+            ],
+            "sourceId": 36
+        },
+        {
+            "code": "9sTwEkrvhe",
+            "macAddress": "5C-CF-7F-0C-3D-CD",
+            "name": "An_sniffer",
+            "status": "OPERATING",
+            "validFrom": "2018-03-20T00:00:00.000+07",
+            "validTo": null,
+            "latitude": 10.831199645996094,
+            "longitude": 106.635498046875,
+            "pollutantValue": [
+                {
+                    "measuredAt": "2019-06-06T15:52:32.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 12.800000190734863,
+                    "pollutant": {
+                        "code": "PM10",
+                        "name": "PM 10 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 200
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:52:32.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 3.700000047683716,
+                    "pollutant": {
+                        "code": "PM2.5",
+                        "name": "PM 2.5 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 201
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:52:32.000+07",
+                    "sensor": "DHT11",
+                    "value": 25,
+                    "pollutant": {
+                        "code": "TEMP",
+                        "name": "Temperature",
+                        "defaultUnit": "\ufffdC",
+                        "description": "https://en.wikipedia.org/wiki/Temperature",
+                        "id": 204
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:52:32.000+07",
+                    "sensor": "DHT11",
+                    "value": 64,
+                    "pollutant": {
+                        "code": "HUM",
+                        "name": "Humidity",
+                        "defaultUnit": "%",
+                        "description": "https://en.wikipedia.org/wiki/Humidity",
+                        "id": 205
+                    }
+                }
+            ],
+            "sourceId": 41
+        },
+        {
+            "code": "1A4hRM7ti7",
+            "macAddress": "FF-A2-DA-00-3F-00",
+            "name": "Sebi_sniffer",
+            "status": "OPERATING",
+            "validFrom": "2017-08-31T00:00:00.000+07",
+            "validTo": null,
+            "latitude": 10.798995018005371,
+            "longitude": 106.6869125366211,
+            "pollutantValue": [],
+            "sourceId": 45
+        },
+        {
+            "code": "nJn1GBek70",
+            "macAddress": "FB-E3-DB-AB-5F-01",
+            "name": "ptitno\ufffdl",
+            "status": "OPERATING",
+            "validFrom": "2017-10-30T00:00:00.000+07",
+            "validTo": null,
+            "latitude": 10.833786964416504,
+            "longitude": 106.60433959960938,
+            "pollutantValue": [
+                {
+                    "measuredAt": "2019-06-06T15:51:21.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 9.699999809265137,
+                    "pollutant": {
+                        "code": "PM10",
+                        "name": "PM 10 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 200
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:51:21.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 2.4000000953674316,
+                    "pollutant": {
+                        "code": "PM2.5",
+                        "name": "PM 2.5 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 201
+                    }
+                }
+            ],
+            "sourceId": 12
+        },
+        {
+            "code": "669-ZZ2-RA3-VT2",
+            "macAddress": "68:C6:3A:87:F2:66",
+            "name": "Markus_sniffer",
+            "status": "OPERATING",
+            "validFrom": "2019-05-22T09:22:13.508+07",
+            "validTo": null,
+            "latitude": 15.9796,
+            "longitude": 108.2527,
+            "pollutantValue": [],
+            "sourceId": 49
+        },
+        {
+            "code": "QVM-HJK-U5L-ZR5",
+            "macAddress": "BC:DD:C2:30:C2:E1",
+            "name": "Nam_sniffer",
+            "status": "OPERATING",
+            "validFrom": "2019-05-27T16:51:36.810+07",
+            "validTo": null,
+            "latitude": 16.02643,
+            "longitude": 108.21189,
+            "pollutantValue": [
+                {
+                    "measuredAt": "2019-06-06T15:59:27.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 0,
+                    "pollutant": {
+                        "code": "PM10",
+                        "name": "PM 10 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 200
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:59:27.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 0,
+                    "pollutant": {
+                        "code": "PM2.5",
+                        "name": "PM 2.5 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 201
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:59:27.000+07",
+                    "sensor": "DHT11",
+                    "value": 24,
+                    "pollutant": {
+                        "code": "TEMP",
+                        "name": "Temperature",
+                        "defaultUnit": "\ufffdC",
+                        "description": "https://en.wikipedia.org/wiki/Temperature",
+                        "id": 204
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:59:27.000+07",
+                    "sensor": "DHT11",
+                    "value": 41,
+                    "pollutant": {
+                        "code": "HUM",
+                        "name": "Humidity",
+                        "defaultUnit": "%",
+                        "description": "https://en.wikipedia.org/wiki/Humidity",
+                        "id": 205
+                    }
+                }
+            ],
+            "sourceId": 50
+        },
+        {
+            "code": "28K-7O6-RW7-ZJ8",
+            "macAddress": "BC:DD:C2:30:C4:A9",
+            "name": "Thuan_sniffer",
+            "status": "OPERATING",
+            "validFrom": "2019-05-28T11:32:20.782+07",
+            "validTo": null,
+            "latitude": 16.07184,
+            "longitude": 108.23362,
+            "pollutantValue": [
+                {
+                    "measuredAt": "2019-06-06T15:57:47.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 2.200000047683716,
+                    "pollutant": {
+                        "code": "PM10",
+                        "name": "PM 10 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 200
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:57:47.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 1.100000023841858,
+                    "pollutant": {
+                        "code": "PM2.5",
+                        "name": "PM 2.5 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 201
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:57:47.000+07",
+                    "sensor": "DHT11",
+                    "value": 23,
+                    "pollutant": {
+                        "code": "TEMP",
+                        "name": "Temperature",
+                        "defaultUnit": "\ufffdC",
+                        "description": "https://en.wikipedia.org/wiki/Temperature",
+                        "id": 204
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:57:47.000+07",
+                    "sensor": "DHT11",
+                    "value": 38,
+                    "pollutant": {
+                        "code": "HUM",
+                        "name": "Humidity",
+                        "defaultUnit": "%",
+                        "description": "https://en.wikipedia.org/wiki/Humidity",
+                        "id": 205
+                    }
+                }
+            ],
+            "sourceId": 51
+        },
+        {
+            "code": "BJ8-FID-D9M-3CR",
+            "macAddress": "2C-3A-E8-43-BD-75",
+            "name": "Thu Sniffer",
+            "status": "OPERATING",
+            "validFrom": "2018-12-14T00:00:00.000+07",
+            "validTo": null,
+            "latitude": 10.788207054138184,
+            "longitude": 106.63380432128906,
+            "pollutantValue": [
+                {
+                    "measuredAt": "2019-06-06T15:58:47.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 7,
+                    "pollutant": {
+                        "code": "PM10",
+                        "name": "PM 10 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 200
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:58:47.000+07",
+                    "sensor": "Nova fitness",
+                    "value": 4.900000095367432,
+                    "pollutant": {
+                        "code": "PM2.5",
+                        "name": "PM 2.5 microns",
+                        "defaultUnit": "ug/m3",
+                        "description": "https://en.wikipedia.org/wiki/Particulates",
+                        "id": 201
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:58:47.000+07",
+                    "sensor": "DHT11",
+                    "value": 24,
+                    "pollutant": {
+                        "code": "TEMP",
+                        "name": "Temperature",
+                        "defaultUnit": "\ufffdC",
+                        "description": "https://en.wikipedia.org/wiki/Temperature",
+                        "id": 204
+                    }
+                },
+                {
+                    "measuredAt": "2019-06-06T15:58:47.000+07",
+                    "sensor": "DHT11",
+                    "value": 85,
+                    "pollutant": {
+                        "code": "HUM",
+                        "name": "Humidity",
+                        "defaultUnit": "%",
+                        "description": "https://en.wikipedia.org/wiki/Humidity",
+                        "id": 205
+                    }
+                }
+            ],
+            "sourceId": 32
+        }
+    ],
+    "resultStatus": {
+        "successful": true,
+        "message": null,
+        "code": null,
+        "severity": "INFO",
+        "detailedMessage": null
+    }
+}
